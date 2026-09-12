@@ -1,0 +1,58 @@
+{
+  "name": "upi-validator",
+  "version": "1.0.0",
+  "description": "Zero-dependency, ultra-fast Indian UPI ID (VPA) validator, bank handle recognizer, and NPCI upi://pay deep link intent URL builder and parser.",
+  "author": "Vijay Misal <misalvijay153@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vjymisal0/upi-validator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vjymisal0/upi-validator/issues"
+  },
+  "homepage": "https://github.com/vjymisal0/upi-validator#readme",
+  "keywords": [
+    "upi",
+    "vpa",
+    "npci",
+    "india-payments",
+    "bhim",
+    "phonepe",
+    "gpay",
+    "paytm",
+    "fintech-india"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.8"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "sideEffects": false
+}
