@@ -1,6 +1,7 @@
 # upi-validator
 
 [![npm version](https://img.shields.io/npm/v/upi-validator.svg?style=flat-square&color=cb3837)](https://www.npmjs.com/package/upi-validator)
+[![CI](https://github.com/vjymisal0/upi-validator/actions/workflows/ci.yml/badge.svg)](https://github.com/vjymisal0/upi-validator/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![Zero Dependencies](https://img.shields.io/badge/Dependencies-0-success.svg?style=flat-square)](https://www.npmjs.com/package/upi-validator)
