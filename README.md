@@ -258,3 +258,7 @@ npm run test:coverage
 ## 📄 License
 
 [MIT](LICENSE) © [Vijay Misal](mailto:misalvijay153@gmail.com)
+
+## Security note
+
+This package validates syntax and constructs intent URLs locally. It does not verify an account, initiate payments, or guarantee transaction success.

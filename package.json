@@ -1,6 +1,6 @@
 {
   "name": "upi-validator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Zero-dependency, ultra-fast Indian UPI ID (VPA) validator, bank handle recognizer, and NPCI upi://pay deep link intent URL builder and parser.",
   "author": "Vijay Misal <misalvijay153@gmail.com>",
   "license": "MIT",
