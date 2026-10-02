@@ -1,6 +1,6 @@
 {
   "name": "upi-validator",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Zero-dependency, ultra-fast Indian UPI ID (VPA) validator, bank handle recognizer, and NPCI upi://pay deep link intent URL builder and parser.",
   "author": "Vijay Misal <misalvijay153@gmail.com>",
   "license": "MIT",
@@ -44,16 +44,22 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "typecheck": "tsc --noEmit",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run typecheck && npm run build && npm test"
   },
   "devDependencies": {
-    "@types/node": "^22.13.9",
-    "tsup": "^8.4.0",
-    "typescript": "^5.8.2",
-    "vitest": "^3.0.8"
+    "@types/node": "^26.6.4",
+    "tsup": "^8.5.1",
+    "typescript": "~5.9.3",
+    "vitest": "^5.0.3"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=20"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "overrides": {
+    "esbuild": "^0.28.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
