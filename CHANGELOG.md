@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.1
+
+- Fixed TypeScript types for CommonJS consumers: `require` now resolves `dist/index.d.cts` instead of the ESM declarations ("masquerading as ESM" under `node16`/`nodenext`).
+- Exposed `./package.json` in the exports map.
+
 ## 1.1.0
 
 - Raised the minimum supported Node.js version to 20 (Node 16 and 18 are end-of-life).
